@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<TextView android:id="@+id/measureFromHereTo"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true"
+    	android:text="Measure from Here to : "
+    	/>
+    	
+	<Spinner android:id="@+id/spinnerTo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@id/measureFromHereTo"
+        />
+	    	
+	<TextView android:id="@+id/distanceKm"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+        android:layout_below="@id/spinnerTo"
+        android:textStyle="bold"
+    	android:text="0.00 km"
+   		/>
+    	
+	<TextView android:id="@+id/distanceMiles"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+        android:layout_below="@id/distanceKm"
+        android:textStyle="bold"
+    	android:text="0.00 miles"
+   		/>
+   		
+	<TextView android:id="@+id/distanceYards"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinnerTo"
+        android:textStyle="bold"
+    	android:text="0.00 yards"
+   		/>
+    	
+	<TextView android:id="@+id/distanceFeet"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/distanceYards"
+        android:textStyle="bold"
+    	android:text="0.00 feet"
+   		/>  		
+   		
+</RelativeLayout>        
